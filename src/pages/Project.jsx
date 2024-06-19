@@ -1,7 +1,7 @@
 import React from 'react'
 import EaseEvent from '../assets/EaseEvent.png'
 import Weatherapp from '../assets/weatherapp.png'
-import InternChallenge from '../assets/InternChallenge.png'
+import InternChallenge from '../assets/InternshipChallenge.png'
 import {motion} from 'framer-motion'
 
 export default function  () {
