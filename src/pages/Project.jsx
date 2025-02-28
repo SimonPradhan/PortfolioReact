@@ -2,6 +2,7 @@ import React from 'react'
 import EaseEvent from '../assets/EaseEvent.png'
 import Weatherapp from '../assets/weatherapp.png'
 import InternChallenge from '../assets/InternshipChallenge.png'
+import ReciLook from '../assets/ReciLook.png'
 import {motion} from 'framer-motion'
 
 export default function  () {
@@ -84,6 +85,30 @@ export default function  () {
             <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">JavaScript</span>
             <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">CSS</span>
             <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">SCSS</span>
+            </motion.div>
+        </div>
+        <div className="mb-8 flex flex-wrap lg:justify-center">
+            <motion.div
+            whileInView={{ opacity: 1, x: 0}}
+            initial= {{ opacity: 0, x: -100}}
+            transition={{ duration: 1}}
+             className="w-full lg:w-1/4">
+            <a href="https://reci-look.vercel.app/" target="_blank" rel="noreferrer">
+            <img src={ReciLook} style={{ width: '300px', height: '150px', objectFit: 'cover' }}  className="mb-6 rounded" alt="image-recilook" />
+            </a>
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0}}
+              initial= {{ opacity: 0, x: 100}}
+              transition={{ duration: 1}}
+             className="w-full max-w-xl lg:w-3/4">
+            <h6 className="mb-2 font-semibold">Personal Project</h6>
+            <p className="mb-4 text-neutral-400">I created a Recipe finder webapp named ReciLook. It is used to find the recipes of various foods. This is a personal project developed in ReactJS with Tailwind CSS. </p>
+            <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">React</span>
+            <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">Html</span>
+            <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">JavaScript</span>
+            <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">CSS</span>
+            <span className="mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">Tailwind CSS</span>
             </motion.div>
         </div>
     </div>
