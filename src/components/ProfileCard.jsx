@@ -39,7 +39,7 @@ const ProfileCard = () => {
         <h2 className="text-center text-white">
             Simon Pradhananga
             <br />
-            <span className="text-base text-neutral-200 font-light">Student</span>
+            <span className="text-base text-neutral-200 font-light">Frontend Dev/QA</span>
         </h2>
         </div>
 

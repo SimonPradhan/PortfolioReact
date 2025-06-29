@@ -21,7 +21,7 @@ function App() {
         <Contact />
         <div className="fixed bottom-0 left-0 w-full bg-gray-900/90 py-3 shadow-lg">
           <div className="max-w-lg mx-auto px-4">
-            <ThreadsVisualizerPlayer audioUrl="/audio/mysong.mp3" />
+            <ThreadsVisualizerPlayer audioUrl="/audio/song.mp3" />
           </div>
         </div>
       </div>
