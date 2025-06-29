@@ -1,6 +1,7 @@
 import React from 'react';
-import simonImage from '../assets/simon.png'; 
+import simonImage from '../assets/Simoncool.png'; 
 import {motion} from 'framer-motion'
+import ProfileCard from '../components/ProfileCard';
 
 export default function Home() {
   const container = (delay) => ({
@@ -29,7 +30,7 @@ export default function Home() {
               variants={container(0.5)}
               initial = "hidden"
               animate= "visible"
-            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-4xl tracking-light">Web Developer</motion.span>
+            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-4xl tracking-light">Frontend Developer/ QA</motion.span>
             <motion.p
               variants={container(1)}
               initial = "hidden"
@@ -41,11 +42,12 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <motion.img
+            <ProfileCard/>
+            {/* <motion.img
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1.2}}
-              src={simonImage} alt="profileSimon" className="rounded-lg size-3/5" />
+              src={simonImage} alt="profileSimon" className="rounded-lg size-3/5" /> */}
           </div>
         </div>
       </div>
