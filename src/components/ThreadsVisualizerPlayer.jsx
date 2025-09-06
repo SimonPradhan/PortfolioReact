@@ -33,7 +33,11 @@ const ThreadsVisualizerPlayer = ({ audioUrl }) => {
   }, [volume]);
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md rounded-full px-6 py-3 flex items-center gap-4 border border-white/20 shadow-lg">
+    <div   className={`fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md rounded-full px-6 py-3 flex items-center gap-4 border transition-shadow duration-300 ${
+    playing
+      ? "border-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]"
+      : "border-white/20 shadow-lg"
+  }`}>
       <button
         onClick={togglePlay}
         className="text-gray-400 text-lg w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition"

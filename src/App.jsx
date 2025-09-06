@@ -6,8 +6,8 @@ import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import WaveformAudioPlayer from "./components/WaveformAudioPlayer";
-import ThreadsVisualizerPlayer from "./components/ThreadsVisualizerPlayer";
+// import WaveformAudioPlayer from "./components/WaveformAudioPlayer";
+// import ThreadsVisualizerPlayer from "./components/ThreadsVisualizerPlayer";
 
 function App() {
   return (
@@ -19,11 +19,11 @@ function App() {
         <Skills />
         <Project />
         <Contact />
-        <div className="fixed bottom-0 left-0 w-full bg-gray-900/90 py-3 shadow-lg">
+        {/* <div className="fixed bottom-0 left-0 w-full bg-gray-900/90 py-3 shadow-lg">
           <div className="max-w-lg mx-auto px-4">
             <ThreadsVisualizerPlayer audioUrl="/audio/song.mp3" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
