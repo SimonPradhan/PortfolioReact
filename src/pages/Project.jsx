@@ -1,28 +1,23 @@
-import React from 'react'
-// import EaseEvent from '../assets/EaseEvent.png'
-// import Weatherapp from '../assets/weatherapp.png'
-// import InternChallenge from '../assets/InternshipChallenge.png'
-// import ReciLook from '../assets/ReciLook.png'
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import projects from "../data/project";
 
-export default function  () {
-  const move = (delay) => ({
-    hidden: { x:-100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        delay: delay,
-        duration: 0.5
-      }
-    }
-  })
+function Projects() {
+  // const move = (delay) => ({
+  //   hidden: { x: -100, opacity: 0 },
+  //   visible: {
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       delay: delay,
+  //       duration: 0.5,
+  //     },
+  //   },
+  // });
   return (
     <div className="border-b border-neutral-900 pb-4">
-        <h1 className="my-20 text-center text-4xl">Projects</h1>
-        <div className="flex flex-col items-center space-y-12">
-          {projects.map((project, index) =>(
+      <h1 className="my-20 text-center text-4xl">Projects</h1>
+      <div className="flex flex-col items-center space-y-12">
+        {projects.map((project) => (
           <div
             key={project.id}
             className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 w-full max-w-5xl"
@@ -59,12 +54,14 @@ export default function  () {
               className="w-full lg:w-2/3 text-center lg:text-left"
             >
               <h6 className="text-xl font-semibold mb-2">{project.title}</h6>
-              <p className="bg-clip-text text-md mb-4">
-              {project.description.split("\n").map((line, index) => (
-                  <p key={index} className="mb-2">{line}</p>
+              <div className="bg-clip-text text-md mb-4">
+                {project.description.split("\n").map((line, index) => (
+                  <p key={index} className="mb-2">
+                    {line}
+                  </p>
                 ))}
-              </p>
-            
+              </div>
+
               {/* Tech Stack */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-2">
                 {project.techStack.map((tech, i) => (
@@ -77,10 +74,10 @@ export default function  () {
                 ))}
               </div>
             </motion.div>
-          </div>      
-          ))}
-        </div>
-        {/* <div className="mb-8 flex flex-wrap lg:justify-center">
+          </div>
+        ))}
+      </div>
+      {/* <div className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div 
               whileInView={{ opacity: 1, x: 0}}
               initial= {{ opacity: 0, x: -100}}
@@ -172,5 +169,7 @@ export default function  () {
             </motion.div>
         </div> */}
     </div>
-  )
+  );
 }
+
+export default Projects;

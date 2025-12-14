@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import SamsungAnalysis from "./pages/Research";
-import PandoraAnalysis from "./pages/Pandora";
 
 // Create a Layout component for your main page
 function MainLayout() {
@@ -28,8 +26,6 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<MainLayout />} />
-            <Route path="/samsung-analysis" element={<SamsungAnalysis />} />
-            <Route path="/pandora-analysis" element={<PandoraAnalysis />} />
           </Routes>
         </div>
       </div>
